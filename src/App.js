@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.scss';
+import Header from './components/header/header';
 
 class App extends React.Component {
   render() {
-    return <div className='App'>Project Trafalgar - Initial stage</div>;
+    return <div className='App'>
+      <Header/>
+
+      
+      </div>;
   }
 }
 

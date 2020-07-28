@@ -1,0 +1,152 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: #2380fa;
+    opacity: 1;
+    width:100%;
+    ;
+}
+
+.logo-main{
+    display: flex;
+    align-items: center;
+}
+
+.logo-title{
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+}
+
+@media(min-width: 900px){
+    .header{
+        flex-direction: row;
+        padding: 1em 5em;
+    }
+
+    .logo{
+        position: static;
+        width: 0;
+    }
+}
+
+/* NAVIGATION */
+nav{
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(0);
+}
+
+.navigation-open{
+    transform: translateX(-100%);
+}
+
+.nav-list{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-item{
+    list-style-type: none;
+    padding: 0 1em;
+}
+
+.close-nav{
+    border: none;
+    background: 0;
+    color: #0051ff;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1em;
+    display: flex;
+}
+
+.open-nav {
+    border: none;
+    background: 0;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    right: 2em;
+    font-size: 2rem;
+}
+
+.nav-list-open{
+    display: flex;
+    padding: 0;
+}
+
+.nav-link{
+    color:#0051ff;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    opacity: 0.7;
+}
+
+.nav-link:focus{
+    font-weight: bold;
+    opacity: 1;
+}
+
+@media(min-width: 900px){
+    nav{
+        width: 500px;
+        position: unset;
+        background: none;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .nav-list-open{
+        flex-direction: row;
+    }
+    .nav-link{
+        visibility: visible;
+        color: #1F1534;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .open-nav{
+        visibility: hidden;
+    }
+
+    .close-nav{
+        visibility: hidden;
+    }
+}
