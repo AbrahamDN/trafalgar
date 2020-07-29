@@ -7,12 +7,9 @@ Default styles such as font-family & element styles shall be made in the index/A
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `yarn start`
-
+`yarn start`
 Start project locally
-
-### `yarn build`
+`yarn build`
 
 Publish development to production
 
