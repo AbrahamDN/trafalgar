@@ -1,0 +1,14 @@
+.card{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 250px;
+    padding: 1.5em;
+    text-align: left;
+    /* box-shadow: 2px 2px #f5f5f5; */
+    /* Remove this  */
+    margin: auto;
+}
+
+.card-image{
+    width: 30%;
+}
