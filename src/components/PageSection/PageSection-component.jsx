@@ -1,11 +1,7 @@
 import React from 'react';
 
-const PageSection = () => {
-  return (
-    <section>
-      <h2>Section Component</h2>
-    </section>
-  );
-};
+import './PageSection-styles.scss';
+
+const PageSection = ({ children }) => <section>{children}</section>;
 
 export default PageSection;
