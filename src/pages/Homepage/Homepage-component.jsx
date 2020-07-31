@@ -8,11 +8,11 @@ const Homepage = ({ ...props }) => {
       <h1>Homepage</h1>
       <PageSection>
         <h2>Section Component</h2>
+        <SplitContent>
+          <div>Split</div>
+          <div>Content</div>
+        </SplitContent>
       </PageSection>
-      <SplitContent>
-        <div>Split</div>
-        <div>Content</div>
-      </SplitContent>
     </div>
   );
 };
