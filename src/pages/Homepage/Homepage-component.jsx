@@ -1,7 +1,6 @@
 import React from 'react';
 import PageSection from '../../components/PageSection/PageSection-component';
 import SplitContent from '../../components/SplitContent/SplitContent-container';
-
 const Homepage = ({ ...props }) => {
   return (
     <div>
