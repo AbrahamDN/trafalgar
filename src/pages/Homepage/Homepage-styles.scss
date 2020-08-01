@@ -1,0 +1,31 @@
+@mixin global-spacing-primary {
+  margin: 2.5vw 10vw;
+}
+@mixin global-spacing-secondary {
+  margin: 5vw 20vw;
+}
+
+.homepage {
+  .header-section {
+    @include global-spacing-primary();
+    min-height: 75vh;
+    text-align: left;
+
+    .left-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      width: 70%;
+    }
+  }
+}
+
+.services-section {
+  @include global-spacing-secondary();
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
