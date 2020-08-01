@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Card-styles.scss';
+import { ReactComponent as Arrow } from '../../arrow.svg';
 
 const Card = ({
   image,
@@ -22,8 +23,13 @@ const Card = ({
       ) : null}
       <div className='card-content'>
         <h3>{title}</h3>
-        <p>{text}</p>
-        {link ? <Link to={link}>{linkLabel || 'Read more'}</Link> : null}
+        <p className={link ? 'card-p' : null}>{text}</p>
+        {link ? (
+          <Link to={link} className='card-link'>
+            {linkLabel || 'Read more'}
+            <Arrow style={{ marginLeft: '1.5ch' }} />
+          </Link>
+        ) : null}
       </div>
     </div>
   );
