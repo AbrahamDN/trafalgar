@@ -2,8 +2,12 @@ import React from 'react';
 
 import './SplitContent-container-styles.scss';
 
-const SplitContent = ({ children }) => {
-  return <div className='split-screen'>{children}</div>;
+const SplitContent = ({ children, ...otherProps }) => {
+  return (
+    <div className='split-screen' {...otherProps}>
+      {children}
+    </div>
+  );
 };
 
 export default SplitContent;
