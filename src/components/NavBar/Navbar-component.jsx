@@ -1,13 +1,8 @@
 import React from "react"
-import "./Navbar.scss"
+import "./Navbar-styles.scss"
 const Navbar= () => {
     return(
         <div className="header">
-            <div className="logo-layout">
-                <img className="logo" src={"/logo192.png"}/>
-                <p className="logo-title">Trafalgar</p>
-            </div>
-
             <nav>
                 <ul className="nav-list">
                     <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
