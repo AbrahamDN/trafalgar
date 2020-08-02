@@ -1,10 +1,10 @@
 import React from "react"
 import "./Button-styles.scss"
 
-const Button = ({value, buttonClass}) => {
+const Button = ({value}) => {
     return(
         <div>
-            <button className={`${buttonClass}`}>{value}</button> 
+            <button>{value}</button> 
         </div>
     )
 }
