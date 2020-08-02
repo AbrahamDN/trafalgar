@@ -5,13 +5,14 @@ import Button from '../../components/Button/Button-component';
 import Card from '../../components/Card/Card-component';
 
 import './Homepage-styles.scss';
+import { ReactComponent as Logo } from '../../arrow.svg';
 
 const Homepage = () => {
   return (
     <div className='homepage'>
       <PageSection className='header-section'>
         <div className='split-content'>
-          <div className='left-content'>
+          <div className='split-content-text'>
             <h1>Virtual healthcare for you</h1>
             <p>
               Trafalgar provides progressive, and affordable healthcare,
@@ -19,7 +20,7 @@ const Homepage = () => {
             </p>
             <Button value='Consult today' primary />
           </div>
-          <div className='right-content'>
+          <div className='split-content-image'>
             <img
               src='/assets/png/trafalgar-header illustration 1.png'
               alt='hero'
@@ -74,6 +75,48 @@ const Homepage = () => {
         </div>
         <div>
           <Button value='Learn More' />
+        </div>
+      </PageSection>
+
+      <PageSection className='split-section'>
+        <div className='split-content'>
+          <div className='split-content-image'>
+            <img
+              src='/assets/png/trafalgar-illustration sec02 1.png'
+              alt='hero'
+            />
+          </div>
+          <div className='split-content-text'>
+            <h2>Virtual healthcare for you</h2>
+            <hr />
+            <p>
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone. To us, it’s not just
+              work. We take pride in the solutions we deliver
+            </p>
+            <Button value='Learn more' />
+          </div>
+        </div>
+        <div className='split-content'>
+          <div className='split-content-text'>
+            <h2>Virtual healthcare for you</h2>
+            <hr />
+            <p>
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone. To us, it’s not just
+              work. We take pride in the solutions we deliver
+            </p>
+            <button>
+              Download
+              <Logo />
+            </button>
+          </div>
+          <div className='split-content-image'>
+            <img
+              src='/assets/png/trafalgar-illustration sec03 1.png'
+              alt='hero'
+            />
+          </div>
         </div>
       </PageSection>
     </div>
