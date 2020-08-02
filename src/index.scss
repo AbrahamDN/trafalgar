@@ -53,3 +53,8 @@ a:hover {
 ul {
   list-style-type: none;
 }
+
+hr {
+  border: 2px solid $heading-color;
+  width: 56px;
+}
