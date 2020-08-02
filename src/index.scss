@@ -19,8 +19,7 @@ h3,
 h4,
 h5,
 h6,
-button,
-a:hover {
+button {
   font-family: 'Muli Bold', sans-serif;
   color: $heading-color;
 }
@@ -46,6 +45,9 @@ li {
 a {
   font-size: 18px;
   color: $text-color;
+}
+a:hover {
+  color: $heading-color;
 }
 
 ul {
