@@ -20,7 +20,7 @@ const Homepage = () => {
               Trafalgar provides progressive, and affordable healthcare,
               accessible on mobile and online for everyone
             </p>
-            <Button buttonClass='outline' value='Consult today' />
+            <Button value='Consult today' primary />
           </div>
           <div className='right-content'>
             <img
@@ -73,7 +73,7 @@ const Homepage = () => {
             text='Track and save your medical history and health data'
           />
         </div>
-        <Button buttonClass='primary' value='Learn More' />
+        <Button value='Learn More' />
       </PageSection>
     </div>
   );
