@@ -4,13 +4,15 @@ import './Navbar-styles.scss';
 
 import NavLinks from '../NavLinks/NavLinks-component';
 
-const Navbar = ({ links, ...otherProps }) => {
+const Navbar = ({ logo, links, ...otherProps }) => {
   return (
-    <div className='header' {...otherProps}>
-      <img src='/assets/logo.svg' alt='logo' />
-      <nav>
-        <NavLinks links={links} className='nav-list' />
-      </nav>
+    <div {...otherProps}>
+      <div className='navbar'>
+        <img src={logo} alt='logo' />
+        <nav>
+          <NavLinks links={links} className='nav-list' />
+        </nav>
+      </div>
     </div>
   );
 };
