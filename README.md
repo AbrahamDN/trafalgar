@@ -31,6 +31,6 @@ Publish development to production
 ![Workflow](https://i.ibb.co/qs2b1Df/Trafalgar-Flow-Chart-s.png)
 
 ## Credits
-Developers: [Abraham](https://github.com/AbrahamDN) | [Zay](https://github.com/soniclinkerman)
+Developers: [AbrahamDN](https://github.com/AbrahamDN) | [Soniclinkerman](https://github.com/soniclinkerman)
 
 Design: [Aryo Pamungkas](https://dribbble.com/shots/12514026--FIGMA-FREEBIE-Landing-page-for-a-healthcare-startup/attachments/4121905?mode=media)
