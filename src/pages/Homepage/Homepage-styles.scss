@@ -1,9 +1,4 @@
-@mixin global-spacing-primary {
-  margin: 2.5vw 10vw;
-}
-@mixin global-spacing-secondary {
-  margin: 5vw 17.5vw;
-}
+@import '../../variables.scss';
 
 .homepage {
   .navbar {

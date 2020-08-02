@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../../components/NavBar/Navbar-component';
 import PageSection from '../../components/PageSection/PageSection-component';
 import SplitContent from '../../components/SplitContent/SplitContent-container';
 import Button from '../../components/Button/Button-component';
@@ -11,7 +10,6 @@ import './Homepage-styles.scss';
 const Homepage = () => {
   return (
     <div className='homepage'>
-      <Navbar className='navbar' />
       <PageSection className='header-section'>
         <SplitContent className='split-content'>
           <div className='left-content'>
