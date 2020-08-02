@@ -9,7 +9,7 @@ nav{
     align-items: center;
 }
 
-.logo{
+.logo-layout{
     display: flex;
 }
 .logo-title{
@@ -19,7 +19,7 @@ nav{
 
 }
 
-.logo-img{
+.logo{
     display: flex;
     width: 50px;
     height: 50px;
@@ -37,15 +37,13 @@ nav{
     margin: 0 1em;
 }
 
-.nav-link{
-    text-decoration: none;
-    color: #1F1534;
-    opacity: 0.5;
-}
+// .nav-link{
+//     opacity: 0.5;
+// }
 
-.nav-link:focus, .nav-link:hover{
-    opacity: 1;
-}
-.nav-link:focus{
-    font-weight: 700;
-}
+// .nav-link:focus, .nav-link:hover{
+//     opacity: 1;
+// }
+// .nav-link:focus{
+//     font-weight: 700;
+// }

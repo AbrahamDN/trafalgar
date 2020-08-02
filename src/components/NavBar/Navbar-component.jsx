@@ -1,10 +1,10 @@
 import React from "react"
-import "./Header.scss"
-const Header= () => {
+import "./Navbar.scss"
+const Navbar= () => {
     return(
         <div className="header">
-            <div className="logo">
-                <img className="logo-img" src={"/logo192.png"}/>
+            <div className="logo-layout">
+                <img className="logo" src={"/logo192.png"}/>
                 <p className="logo-title">Trafalgar</p>
             </div>
 
@@ -21,4 +21,4 @@ const Header= () => {
     )
 }
 
-export default Header
+export default Navbar
