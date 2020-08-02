@@ -11,12 +11,7 @@ import './Homepage-styles.scss';
 const Homepage = () => {
   return (
     <div className='homepage'>
-
-      <div className="logo-layout">
-        <img src={"/assets/png/logo.png"}/>
-        <Navbar className='navbar' />
-      </div>
-
+      <Navbar className='navbar' />
       <PageSection className='header-section'>
         <SplitContent className='split-content'>
           <div className='left-content'>
