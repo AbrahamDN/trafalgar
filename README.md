@@ -24,6 +24,7 @@ Publish development to production
   * Import sass variables on top of your scss file from `variables.scss`. Example: `@import './variables.scss'`
   * All HTML tag styling that is global must be put inside the index.scss file
   * As for classes, global classes should be placed in the App.scss. Global HTML tags can also be placed there if the tag styling has multiple versions.
+  * In scss files give the first parent element a class name and nest all the other classnames within that parent class. 
   
 ## Git/Work Flow
 ![GitFlow](https://miro.medium.com/max/705/1*BMOwwcLBTgzk3EjBVEOfiA.png)
