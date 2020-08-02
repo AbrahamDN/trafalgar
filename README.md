@@ -15,10 +15,14 @@ Publish development to production
 
 
 ## Convention rules
-
-  * React component file name must include `-component`. Example: react-component.jsx.
-  * Use SaSS (.scss) instead of css
-  * Component folders must include a `.jsx` & `.scss` if component uses its own styles
+ 
+ *React component folder structure:
+  ** JS component file name should include `-component`. Example: `react-component.jsx`
+  ** Styles file names should include `-styles`. Example: `react-styles.jsx   
+  
+  * React component file name must include `-component`. Example: `react-component.jsx`.
+  * Use `scss` instead of `css`
+  * `-component` files should have `.jsx` instead of `js`
 
 
 ## Credits
