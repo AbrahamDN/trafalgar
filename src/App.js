@@ -37,7 +37,11 @@ class App extends React.Component {
     const { navLinks } = this.state;
     return (
       <div className='App'>
-        <Navbar className='navbar-wrap' links={navLinks} />
+        <Navbar
+          className='navbar-wrap'
+          logo='/assets/logo.svg'
+          links={navLinks}
+        />
         <Homepage />
       </div>
     );
