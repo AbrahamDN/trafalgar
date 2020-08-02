@@ -94,6 +94,7 @@ const Homepage = () => {
               accessible on mobile and online for everyone. To us, it’s not just
               work. We take pride in the solutions we deliver
             </p>
+            <br />
             <Button value='Learn more' />
           </div>
         </div>
@@ -106,6 +107,7 @@ const Homepage = () => {
               accessible on mobile and online for everyone. To us, it’s not just
               work. We take pride in the solutions we deliver
             </p>
+            <br />
             <button>
               Download
               <Logo />
