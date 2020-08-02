@@ -11,7 +11,6 @@ import './Homepage-styles.scss';
 const Homepage = () => {
   return (
     <div className='homepage'>
-      <Navbar className='navbar' />
       <PageSection className='header-section'>
         <SplitContent className='split-content'>
           <div className='left-content'>
