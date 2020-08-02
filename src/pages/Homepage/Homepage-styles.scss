@@ -1,24 +1,42 @@
 @import '../../variables.scss';
 
+@mixin flex-align-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin image-sizing {
+  width: 100%;
+  max-width: initial;
+  object-fit: contain;
+}
+
 .homepage {
-  .navbar {
-    @include global-spacing-secondary();
+  .split-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 10em;
   }
 
   .header-section {
     @include global-spacing-primary();
-    min-height: 75vh;
+    min-height: 66vh;
     text-align: left;
+    font-size: 21px;
 
-    .split-screen {
-      position: relative;
-      height: 100%;
+    .split-content {
       .left-content {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        width: 70%;
+      }
+      .right-content {
+        @include flex-align-center();
+        img {
+          @include image-sizing();
+          min-width: 347px;
+        }
       }
     }
   }
@@ -26,9 +44,17 @@
   .services-section {
     @include global-spacing-secondary();
 
+    & > div:first-child {
+      margin: 0 10%;
+      text-align: center;
+    }
+    & > div:last-child {
+      @include flex-align-center();
+    }
+
     .card-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
       margin: 6% 0;
     }
   }

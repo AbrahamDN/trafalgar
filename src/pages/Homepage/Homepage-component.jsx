@@ -1,7 +1,6 @@
 import React from 'react';
 
 import PageSection from '../../components/PageSection/PageSection-component';
-import SplitContent from '../../components/SplitContent/SplitContent-container';
 import Button from '../../components/Button/Button-component';
 import Card from '../../components/Card/Card-component';
 
@@ -11,7 +10,7 @@ const Homepage = () => {
   return (
     <div className='homepage'>
       <PageSection className='header-section'>
-        <SplitContent className='split-content'>
+        <div className='split-content'>
           <div className='left-content'>
             <h1>Virtual healthcare for you</h1>
             <p>
@@ -26,18 +25,20 @@ const Homepage = () => {
               alt='hero'
             />
           </div>
-        </SplitContent>
+        </div>
       </PageSection>
 
       <PageSection className='services-section'>
-        <h2>Our services</h2>
-        <hr />
-        <p>
-          We provide to you the best choiches for you. Adjust it to your health
-          needs and make sure your undergo treatment with our highly qualified
-          doctors you can consult with us which type of service is suitable for
-          your health
-        </p>
+        <div>
+          <h2>Our services</h2>
+          <hr />
+          <p>
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </p>
+        </div>
         <div className='card-container'>
           <Card
             icon='/assets/svg/search-icon.svg'
@@ -71,7 +72,9 @@ const Homepage = () => {
             text='Track and save your medical history and health data'
           />
         </div>
-        <Button value='Learn More' />
+        <div>
+          <Button value='Learn More' />
+        </div>
       </PageSection>
     </div>
   );
