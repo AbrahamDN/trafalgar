@@ -27,7 +27,8 @@ Publish development to production
   
 ## Git/Work Flow
 ![GitFlow](https://miro.medium.com/max/705/1*BMOwwcLBTgzk3EjBVEOfiA.png)
-![Workflow](https://ibb.co/bBGpd6Z)
+
+![Workflow](https://i.ibb.co/qs2b1Df/Trafalgar-Flow-Chart-s.png)
 
 ## Credits
 Developers: [Abraham](https://github.com/AbrahamDN) | [Zay](https://github.com/soniclinkerman)
