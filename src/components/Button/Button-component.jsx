@@ -1,14 +1,10 @@
 import React from "react"
-import "./Button.scss"
+import "./Button-styles.scss"
 
 const Button = ({value, buttonClass}) => {
     return(
         <div>
-            <input 
-            className={`btn btn-${buttonClass}`}
-            type="button" 
-            value={value}
-            />
+            <button className={`${buttonClass}`}>{value}</button> 
         </div>
     )
 }
