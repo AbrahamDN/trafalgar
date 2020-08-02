@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../../components/NavBar/Navbar-component';
 import PageSection from '../../components/PageSection/PageSection-component';
 import SplitContent from '../../components/SplitContent/SplitContent-container';
 import Button from '../../components/Button/Button-component';
