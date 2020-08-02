@@ -1,4 +1,5 @@
-$cardColor: #ffffff;
+@import '../../variables.scss';
+
 $em: 2em;
 
 @mixin cardPaddingTop {
@@ -8,15 +9,15 @@ $em: 2em;
 }
 
 .card {
-  display: inline-grid;
+  display: grid;
+  grid-template-rows: 1fr;
   min-width: 200px;
   min-height: 150px;
-  margin: 1em;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
   text-align: left;
   overflow: hidden;
-  background: $cardColor;
+  background: $bg-color;
 
   .card-image {
     position: relative;
@@ -34,16 +35,18 @@ $em: 2em;
   }
 
   .card-icon {
+    display: flex;
     padding: $em $em 0;
 
     @include cardPaddingTop();
   }
 
   .card-content {
-    background: $cardColor;
+    background: $bg-color;
     z-index: 1;
     padding: 1em $em $em;
     position: relative;
+    font-size: 16px;
 
     .card-p {
       margin-bottom: 3em;
