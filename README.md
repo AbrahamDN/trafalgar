@@ -25,8 +25,11 @@ Publish development to production
   * All HTML tag styling that is global must be put inside the index.scss file
   * As for classes, global classes should be placed in the App.scss. Global HTML tags can also be placed there if the tag styling has multiple versions.
   
-
+## Git/Work Flow
+![GitFlow](https://miro.medium.com/max/705/1*BMOwwcLBTgzk3EjBVEOfiA.png)
+![Workflow](https://ibb.co/bBGpd6Z)
 
 ## Credits
 Developers: [Abraham](https://github.com/AbrahamDN) | [Zay](https://github.com/soniclinkerman)
-Design: Aryo Pamungkas
+
+Design: [Aryo Pamungkas](https://dribbble.com/shots/12514026--FIGMA-FREEBIE-Landing-page-for-a-healthcare-startup/attachments/4121905?mode=media)
