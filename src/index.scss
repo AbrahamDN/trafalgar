@@ -1,16 +1,4 @@
-@font-face {
-  font-family: 'Muli';
-  src: local('Muli'), url(./fonts/muli/Muli.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Muli Bold';
-  src: local('Muli Bold'), url(./fonts/muli/Muli-Bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Muli Light';
-  src: local('Muli Light'), url(./fonts/muli/Muli-Light.ttf) format('truetype');
-}
-
+@use './fonts.scss';
 @import './variables.scss';
 
 * {
@@ -33,7 +21,7 @@ h5,
 h6,
 button,
 a:hover {
-  font-family: 'Muli Bold';
+  font-family: 'Muli Bold', sans-serif;
   color: $heading-color;
 }
 
