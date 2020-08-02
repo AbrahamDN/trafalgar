@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { ReactComponent as Logo } from '/assets/logo.svg';
 import './Navbar-styles.scss';
 
 import NavLinks from '../NavLinks/NavLinks-component';
@@ -8,7 +7,7 @@ import NavLinks from '../NavLinks/NavLinks-component';
 const Navbar = ({ links, ...otherProps }) => {
   return (
     <div className='header' {...otherProps}>
-      <Logo />
+      <img src='/assets/logo.svg' alt='logo' />
       <nav>
         <NavLinks links={links} className='nav-list' />
       </nav>

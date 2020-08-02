@@ -1,16 +1,15 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
-}
+.header {
+  display: flex;
+  justify-content: space-between;
 
-.nav-list{
+  .nav-list {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-}
 
-.nav-item{
-    margin: 0 1em;
+    li {
+      margin: 0 1em;
+    }
+  }
 }
