@@ -22,6 +22,10 @@
     cursor: pointer;
   }
 
+  button:hover {
+    @include hover;
+  }
+
   .cta {
     background: $primary-color;
     border: none;
