@@ -21,9 +21,12 @@
     margin: 1em 0;
     cursor: pointer;
   }
-
   button:hover {
     @include hover;
+  }
+  button:focus {
+    outline: none;
+    filter: grayscale(1);
   }
 
   .cta {
