@@ -18,6 +18,10 @@ $text-color: #7d7987;
 $heading-color: #000;
 $drop-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
@@ -31,7 +35,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button,
+a:hover {
   font-family: 'Muli Bold';
   color: $heading-color;
 }
@@ -47,4 +53,18 @@ h3 {
 }
 h4 {
   font-size: 21px;
+}
+
+a,
+li {
+  text-decoration: none;
+}
+
+a {
+  font-size: 18px;
+  color: $text-color;
+}
+
+ul {
+  list-style-type: none;
 }
