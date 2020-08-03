@@ -22,3 +22,7 @@ $line-height-3: 38px;
 @mixin hover {
   transform: scale(1.02);
 }
+
+@mixin transition {
+  transition: all 0.3s ease;
+}

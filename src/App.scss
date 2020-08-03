@@ -20,6 +20,12 @@
     font-size: 18px;
     margin: 1em 0;
     cursor: pointer;
+
+    .cta {
+      background: $primary-color;
+      border: none;
+      color: #fff;
+    }
   }
   button:hover {
     @include hover;
@@ -29,9 +35,20 @@
     filter: grayscale(1);
   }
 
-  .cta {
-    background: $primary-color;
-    border: none;
-    color: #fff;
+  .arrow-link {
+    color: $primary-color;
+    font-family: 'Muli';
+
+    &:hover {
+      &::after {
+        margin-left: 1em;
+      }
+    }
+
+    &::after {
+      content: url('/assets/svg/arrow.svg');
+      margin-left: 0.75em;
+      @include transition;
+    }
   }
 }
