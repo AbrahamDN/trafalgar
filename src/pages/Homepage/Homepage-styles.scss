@@ -86,6 +86,11 @@ $spacing-top: 15%;
       }
     }
   }
+
+  .testimonials-section {
+    padding-top: 5%;
+    @include global-spacing-secondary;
+  }
 }
 
 .split-section {
