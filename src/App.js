@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Homepage from './pages/Homepage/Homepage-component';
 import Navbar from './components/NavBar/Navbar-component';
+import Footer from './components/Footer/Footer-container';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -43,6 +44,7 @@ class App extends React.Component {
           links={navLinks}
         />
         <Homepage />
+        <Footer />
       </div>
     );
   }
