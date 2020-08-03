@@ -3,6 +3,7 @@ import React from 'react';
 import PageSection from '../../components/PageSection/PageSection-component';
 import Button from '../../components/Button/Button-component';
 import Card from '../../components/Card/Card-component';
+import Testimonial from '../../components/Testimonial/Testimonial-container';
 
 import './Homepage-styles.scss';
 import { ReactComponent as Logo } from '../../arrow.svg';
@@ -119,6 +120,22 @@ const Homepage = () => {
               alt='hero'
             />
           </div>
+        </div>
+      </PageSection>
+
+      <PageSection className='testimonials-section'>
+        <div>
+          <Testimonial
+            title='What our customer are saying'
+            name='Edward Newgate'
+            info='Founder Circle'
+            review='
+        “Our dedicated patient engagement app and 
+        web portal allow you to access information instantaneously 
+        (no tedeous form, long calls, or administrative hassle) 
+        and securely”
+        '
+          />
         </div>
       </PageSection>
     </div>
