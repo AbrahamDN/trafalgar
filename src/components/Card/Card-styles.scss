@@ -18,6 +18,11 @@ $em: 2em;
   text-align: left;
   overflow: hidden;
   background: $bg-color;
+  @include transition;
+
+  &:hover {
+    @include hover;
+  }
 
   .card-image {
     position: relative;
