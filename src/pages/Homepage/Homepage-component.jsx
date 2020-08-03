@@ -9,6 +9,30 @@ import './Homepage-styles.scss';
 import { ReactComponent as Logo } from '../../arrow.svg';
 
 const Homepage = () => {
+  const articles = [
+    {
+      image: '/assets/jpg/medical-shots.jpg',
+      title: 'Disease detection, check up in the laboratory',
+      text:
+        'In this case, the role of the health laboratory is very important to do a disease detection...',
+      link: '/',
+    },
+    {
+      image: '/assets/jpg/microscope.jpg',
+      title: 'Herbal medicines that are safe for consumption',
+      text:
+        'Herbal medicine is very widely used at this time because of its very good for your health...',
+      link: '/',
+    },
+    {
+      image: '/assets/jpg/face-mask.jpg',
+      title: 'Natural care for healthy facial skin',
+      text:
+        'A healthy lifestyle should start from now and also for your skin health. There are some...',
+      link: '/',
+    },
+  ];
+
   return (
     <div className='homepage'>
       <PageSection className='header-section'>
@@ -137,6 +161,28 @@ const Homepage = () => {
         '
           />
         </div>
+      </PageSection>
+
+      <PageSection className='articles-section'>
+        <div>
+          <h2>Check out our latest article</h2>
+          <hr />
+        </div>
+        <div className='card-container'>
+          {articles.map((article, i) => {
+            const { image, title, text, link } = article;
+            return (
+              <Card
+                key={i}
+                image={image}
+                title={title}
+                text={text}
+                link={link}
+              />
+            );
+          })}
+        </div>
+        <button>View all</button>
       </PageSection>
     </div>
   );

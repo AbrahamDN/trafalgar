@@ -49,9 +49,14 @@ $spacing-top: 15%;
     }
   }
 
-  .services-section {
-    @include global-spacing-secondary();
+  .services-section,
+  .testimonials-section,
+  .split-section,
+  .articles-section {
+    @include global-spacing-secondary;
+  }
 
+  .services-section {
     & > div:first-child {
       margin: 0 10%;
       text-align: center;
@@ -64,11 +69,7 @@ $spacing-top: 15%;
     }
 
     .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
-      grid-gap: 34px;
       margin: 6% 0;
-      position: relative;
 
       &::before {
         content: url('/assets/svg/blob.svg');
@@ -89,36 +90,70 @@ $spacing-top: 15%;
 
   .testimonials-section {
     padding-top: 5%;
-    @include global-spacing-secondary;
+  }
+
+  .split-section {
+    position: relative;
+
+    &::after {
+      content: url('/assets/svg/grid-element.svg');
+      position: absolute;
+      right: -20vw;
+      bottom: 45%;
+    }
+
+    .split-content {
+      margin-top: $spacing-top;
+    }
+
+    hr {
+      margin: initial;
+    }
+
+    p {
+      @include p-margin-top();
+    }
+
+    button svg {
+      transform: rotateZ(90deg) translateY(-1ch);
+    }
+  }
+
+  .articles-section {
+    text-align: center;
+
+    & > div:first-child {
+      margin-bottom: 6%;
+    }
+
+    .card-container {
+      margin: 6% 0;
+      position: relative;
+
+      &::before {
+        content: url('/assets/svg/grid-element.svg');
+        position: absolute;
+        left: -2.5vw;
+        top: -2.5vw;
+        z-index: -998;
+      }
+      &::after {
+        content: url('/assets/svg/blob-2.svg');
+        position: absolute;
+        right: -30vw;
+        top: -10vw;
+        z-index: -999;
+      }
+    }
   }
 }
 
-.split-section {
-  @include global-spacing-secondary();
+//
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
+  grid-gap: 34px;
   position: relative;
-
-  &::after {
-    content: url('/assets/svg/grid-element.svg');
-    position: absolute;
-    right: -20vw;
-    bottom: 45%;
-  }
-
-  .split-content {
-    margin-top: $spacing-top;
-  }
-
-  hr {
-    margin: initial;
-  }
-
-  p {
-    @include p-margin-top();
-  }
-
-  button svg {
-    transform: rotateZ(90deg) translateY(-1ch);
-  }
 }
 
 //
