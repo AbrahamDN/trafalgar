@@ -1,12 +1,14 @@
 .testimonial {
-    width: 50%;
     border-radius: 10px;
     background-image: linear-gradient(#5B9BF3, #3b90ff);
     margin: auto;
 }
 
+
 .testimonial-title{
-    margin-bottom: 1.3em;
+    padding-top: 1em;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .testimonial-title::after{
@@ -17,6 +19,10 @@
     display: block;
     width: 8%;
     content: ''
+}
+
+.container, .testimonial-title, .testimonial-name{
+    color: #fff;
 }
 
 .container{
@@ -52,6 +58,22 @@
 
 .testimonial-review{
     width: 50%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: left;
+}
+
+@media(max-width: 900px){
+    .testimonial-title{
+        font-size: 1.8rem;
+    }
+    .testimonial-main, .testimonial-profile{
+        flex-direction: column;;
+        text-align: center;
+    }
+    .testimonial-review{
+        width: 100%;
+        text-align: center;
+    }
+
+    
 }

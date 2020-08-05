@@ -4,8 +4,9 @@ import ProfileImage from "../ProfileImage/Profile-Image-component"
 const Testimonial = ({title,name,info,review}) => {
     return(
         <div className="testimonial">
+             <h1 className="testimonial-title">{title}</h1>
             <div className="container">
-                <h1 className="testimonial-title">{title}</h1>
+               
 
                 <div className="testimonial-main">
 
