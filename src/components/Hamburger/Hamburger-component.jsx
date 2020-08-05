@@ -1,9 +1,13 @@
 import React, { Component } from "react"
 import "./Hamburger-styles.scss"
-const Hamburger = () => {
+const Hamburger = ({shown,onClick }) => {
         return(
             <div>
-                <a className="hamburger" href="#">&#9776;</a>
+                {shown ?
+                 <a className="hamburger" href="#" onClick={onClick}>&#9776;</a>:
+                 <a className="times" href="#" onClick={onClick}>&times;</a>
+                }
+               
             </div>
         )
     }
