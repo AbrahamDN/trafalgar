@@ -1,48 +1,27 @@
-import React from "react"
-import "./Footer-styles.scss"
-const Footer = () => {
-    return(
-        <div className="footer">
-            <div className="container">
-                <div className="footer-main">
-                    <div className="logo">
-                        <img className="logo-img" src={"/logo192.png"}/>
-                        <p className="logo-title">Trafalgar</p>
-                    </div>
+import React from 'react';
+import './Footer-styles.scss';
 
-                    <p className="footer-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tempora blanditiis aperiam!</p>
+import FooterGroupLinks from './FooterGroupLinks/FooterGroupLinks-component';
 
-                    <p className="copyright">©Copyright</p>
-                </div>
-
-            <div className="footer-links">
-                <div>
-                    <h4>1</h4>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                </div>
-                <div>
-                    <h4>1</h4>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                </div>
-                <div>
-                    <h4>1</h4>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                </div>
-               
+const Footer = ({ logo, alt, brief, copyright, data, ...otherProps }) => {
+  return (
+    <div {...otherProps}>
+      <div className='ft'>
+        <div className='ft-wrap'>
+          <div className='ft-main'>
+            <div className='logo'>
+              <img src={logo} alt={alt || 'logo'} />
             </div>
-                
-
+            <div className='ft-para'>
+              <p>{brief}</p>
+              <p>{copyright}</p>
             </div>
-
-
+          </div>
+          <FooterGroupLinks data={data} />
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
