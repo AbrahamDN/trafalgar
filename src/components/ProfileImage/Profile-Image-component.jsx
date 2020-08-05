@@ -1,14 +1,15 @@
-import React from "react"
+import React from 'react';
 
-const ProfileImage = ({image}) => {
-    return(
-        <div>
-            <img 
-            // Remove this style once we move to that part of the project
-            style = {{width: "50px", borderRadius: "30px", border: "2px solid red"}}
-            src={image} alt="profile"/>
-        </div>
-    )
-}
+import './Profile-image-styles.scss';
 
-export default ProfileImage
+const ProfileImage = ({ image, alt, ...otherProps }) => {
+  return (
+    <div {...otherProps}>
+      {image ? (
+        <img className='profile-image' src={image} alt={alt || 'profile'} />
+      ) : null}
+    </div>
+  );
+};
+
+export default ProfileImage;
