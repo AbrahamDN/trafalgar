@@ -39,3 +39,22 @@
     cursor: pointer;
   }
 }
+
+.slides-wrapper {
+  overflow: hidden;
+}
+
+.carousel-slide {
+  animation: slide-in 0.6s cubic-bezier(0.17, 0.67, 0.82, 0.64);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
