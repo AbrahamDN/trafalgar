@@ -3,6 +3,8 @@ import './App.scss';
 import Homepage from './pages/Homepage/Homepage-component';
 import Navbar from './components/NavBar/Navbar-component';
 import Footer from './components/Footer/Footer-container';
+
+import FOOTER_LINKS_DATA from './footerData';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +46,13 @@ class App extends React.Component {
           links={navLinks}
         />
         <Homepage />
-        <Footer />
+        <Footer
+          logo='/assets/logo-light.svg'
+          brief='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+        for everyone'
+          copyright='©Trafalgar PTY LTD 2020. All rights reserved'
+          data={FOOTER_LINKS_DATA}
+        />
       </div>
     );
   }

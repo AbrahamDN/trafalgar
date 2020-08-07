@@ -13,11 +13,11 @@ $line-height-3: 38px;
 
 // mixins
 @mixin global-spacing-primary {
-  margin: 2.5% 10%;
+  margin: 2.5em 10%;
 }
 
 @mixin global-spacing-secondary {
-  margin: 10% 17.5%;
+  margin: 10em 17.5%;
 }
 
 @mixin hover {

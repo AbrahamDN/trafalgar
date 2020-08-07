@@ -9,7 +9,6 @@ const NavLinks = ({ links, ...otherProps }) => {
         ? links.map((link, index) => {
             const { name, url, active } = link;
             const handleActive = active ? 'active' : null;
-            console.log(active);
             return (
               <li key={index}>
                 <a className={handleActive} href={url}>
