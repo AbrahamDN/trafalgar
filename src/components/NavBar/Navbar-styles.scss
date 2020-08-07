@@ -1,20 +1,19 @@
 @import '../../variables.scss';
 
-.test{
+.navbar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
 }
 
-.nav-hidden{
+.nav-hidden {
   display: none;
 }
 
-.nav-mobile{
+.nav-mobile {
   padding: 1em;
 }
 
-.nav-list-mobile{
+.nav-list-mobile {
   height: 300px;
   display: flex;
   flex-direction: column;
