@@ -8,7 +8,7 @@ class Navbar extends Component {
     super(props);
     this.state = {
       width: 0,
-      open: true,
+      open: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -24,7 +24,9 @@ class Navbar extends Component {
 
   changeOpen = () => {
     this.setState({ open: !this.state.open });
+
   };
+
 
   render() {
     const { logo, links, ...otherProps } = this.props;
@@ -32,7 +34,7 @@ class Navbar extends Component {
 
     if (this.state.width > 850) {
       information = <NavLinks links={links} className='nav-list' />;
-      this.state.open = false;
+     
     } else if (this.state.width < 850) {
       information = (
         <div>
