@@ -32,7 +32,7 @@ render(){
 
   if(this.state.width > 850){
     information = <NavLinks links={links} className="nav-list" />
-    this.state.open = false
+    this.setState({open: false})
   }
   else if(this.state.width < 850){
     information =(
