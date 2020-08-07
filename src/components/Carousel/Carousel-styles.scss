@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+@mixin opacity {
+  opacity: 0.5;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 2em auto;
+
+  .current.arrow {
+    @include opacity();
+  }
+
+  img {
+    width: 2em;
+    cursor: pointer;
+  }
+
+  .prev {
+    transform: rotate(180deg);
+  }
+}
+
+.slides-dots {
+  color: $primary-color;
+  font-size: 1.4em;
+  padding: 0 1em;
+  cursor: default;
+
+  & span:not(.current) {
+    @include opacity();
+  }
+  span:not(:first-child) {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+}
