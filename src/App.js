@@ -42,12 +42,12 @@ class App extends React.Component {
       <div className='App'>
         <Navbar
           className='navbar-wrap'
-          logo='/assets/logo.svg'
+          logo='/trafalgar/assets/logo.svg'
           links={navLinks}
         />
         <Homepage />
         <Footer
-          logo='/assets/logo-light.svg'
+          logo='/trafalgar/assets/logo-light.svg'
           brief='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
         for everyone'
           copyright='©Trafalgar PTY LTD 2020. All rights reserved'

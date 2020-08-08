@@ -46,7 +46,7 @@
     }
 
     &::after {
-      content: url('/assets/svg/arrow.svg');
+      content: url('/trafalgar/assets/svg/arrow.svg');
       margin-left: 0.75em;
       @include transition;
     }
