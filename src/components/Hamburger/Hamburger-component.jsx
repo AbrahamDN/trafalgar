@@ -4,8 +4,8 @@ const Hamburger = ({shown,onClick }) => {
         return(
             <div className="close">
                 {shown ?
-                 <a  className="hamburger" href="/" onClick={onClick}>&#9776;</a>:
-                 <a className="times" href="/" onClick={onClick}>&times;</a>
+                 <span className="hamburger"  onClick={onClick}>&#9776;</span>:
+                 <span className="times"  onClick={onClick}>&times;</span>
                 }
                
             </div>
