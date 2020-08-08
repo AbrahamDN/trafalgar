@@ -1,6 +1,6 @@
 Install `yarn` for this project!
 
-Remember to call `git pull origin master` to keep your local repository up to date.
+Remember to call `git pull origin source` to keep your local repository up to date.
 
 Default styles such as font-family & element styles shall be made in the index/App.scss
 
