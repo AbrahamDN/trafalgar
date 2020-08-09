@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/trafalgar/static/css/main.95421303.chunk.css",
-    "main.js": "/trafalgar/static/js/main.14865cf5.chunk.js",
-    "main.js.map": "/trafalgar/static/js/main.14865cf5.chunk.js.map",
-    "runtime-main.js": "/trafalgar/static/js/runtime-main.1252dfe1.js",
-    "runtime-main.js.map": "/trafalgar/static/js/runtime-main.1252dfe1.js.map",
-    "static/js/2.4fe06923.chunk.js": "/trafalgar/static/js/2.4fe06923.chunk.js",
-    "static/js/2.4fe06923.chunk.js.map": "/trafalgar/static/js/2.4fe06923.chunk.js.map",
-    "index.html": "/trafalgar/index.html",
-    "precache-manifest.cd6057c84994d6be18badd4caa5256d8.js": "/trafalgar/precache-manifest.cd6057c84994d6be18badd4caa5256d8.js",
-    "service-worker.js": "/trafalgar/service-worker.js",
-    "static/css/main.95421303.chunk.css.map": "/trafalgar/static/css/main.95421303.chunk.css.map",
-    "static/js/2.4fe06923.chunk.js.LICENSE.txt": "/trafalgar/static/js/2.4fe06923.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/trafalgar/static/media/Muli.df733025.ttf",
-    "static/media/arrow.svg": "/trafalgar/static/media/arrow.71c0d5e8.svg"
+    "main.css": "/static/css/main.9212b306.chunk.css",
+    "main.js": "/static/js/main.39d91edc.chunk.js",
+    "main.js.map": "/static/js/main.39d91edc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5f1e42c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5f1e42c.js.map",
+    "static/js/2.4fe06923.chunk.js": "/static/js/2.4fe06923.chunk.js",
+    "static/js/2.4fe06923.chunk.js.map": "/static/js/2.4fe06923.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2501625c17bd91d4340d0060583730b0.js": "/precache-manifest.2501625c17bd91d4340d0060583730b0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9212b306.chunk.css.map": "/static/css/main.9212b306.chunk.css.map",
+    "static/js/2.4fe06923.chunk.js.LICENSE.txt": "/static/js/2.4fe06923.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Muli.df733025.ttf",
+    "static/media/arrow.svg": "/static/media/arrow.71c0d5e8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1252dfe1.js",
+    "static/js/runtime-main.a5f1e42c.js",
     "static/js/2.4fe06923.chunk.js",
-    "static/css/main.95421303.chunk.css",
-    "static/js/main.14865cf5.chunk.js"
+    "static/css/main.9212b306.chunk.css",
+    "static/js/main.39d91edc.chunk.js"
   ]
 }
