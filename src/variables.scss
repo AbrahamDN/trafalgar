@@ -1,0 +1,29 @@
+// variables
+$primary-gradient: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+$primary-color: #458ff6;
+$bg-color: #fff;
+$text-color: #7d7987;
+$heading-color: #000;
+$drop-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+$border-radius: 20px;
+
+$line-height-1: 53px;
+$line-height-2: 48px;
+$line-height-3: 38px;
+
+// mixins
+@mixin global-spacing-primary {
+  margin: 2.5em 10%;
+}
+
+@mixin global-spacing-secondary {
+  margin: 10em 17.5%;
+}
+
+@mixin hover {
+  transform: scale(1.02);
+}
+
+@mixin transition {
+  transition: all 0.3s ease;
+}

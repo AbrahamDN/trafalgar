@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.ft {
+  background: $primary-gradient;
+  display: flex;
+  justify-content: center;
+
+  * {
+    color: #fff;
+  }
+
+  .ft-wrap {
+    @include global-spacing-primary;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 15%;
+  }
+
+  .ft-para {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
