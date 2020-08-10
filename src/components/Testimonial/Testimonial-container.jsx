@@ -11,22 +11,24 @@ const Testimonial = ({
   ...otherProps
 }) => {
   return (
-    <div className='testimonial' {...otherProps}>
-      <div className='testimonial-content'>
-        <h1>{title}</h1>
-        <hr />
-        <div className='testimonial-main'>
-          {name && image ? (
-            <div className='testimonial-info'>
-              <ProfileImage image={image} alt={alt} />
-              <span>
-                <h3>{name}</h3>
-                <p>{info}</p>
-              </span>
+    <div {...otherProps}>
+      <div className='testimonial'>
+        <div className='testimonial-content'>
+          <h2>{title}</h2>
+          <hr />
+          <div className='testimonial-main'>
+            {name && image ? (
+              <div className='testimonial-info'>
+                <ProfileImage image={image} alt={alt} />
+                <span>
+                  <h3>{name}</h3>
+                  <p>{info}</p>
+                </span>
+              </div>
+            ) : null}
+            <div className='testimonial-review'>
+              <p>{`"${review || 'Review'}"`}</p>
             </div>
-          ) : null}
-          <div className='testimonial-review'>
-            <p>{`"${review || 'Review'}"`}</p>
           </div>
         </div>
       </div>

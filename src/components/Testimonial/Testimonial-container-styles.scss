@@ -11,10 +11,10 @@
   }
 
   .testimonial-content {
-    padding: 5% 10%;
+    padding: 2.5em 10%;
   }
 
-  h1 {
+  h2 {
     text-align: center;
   }
 
@@ -48,5 +48,16 @@
   .testimonial-review {
     filter: opacity(0.8);
     font-size: calc(1em + 1px);
+  }
+
+  // Mobile
+  @media only screen and (max-width: 600px) {
+    .testimonial-main {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+      * {
+        text-align: center;
+      }
+    }
   }
 }
