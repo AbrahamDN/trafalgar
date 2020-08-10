@@ -28,14 +28,14 @@
 .slides-dots {
   color: $primary-color;
   font-size: 1.4em;
-  padding: 0 1em;
+  padding: 0 20%;
   cursor: default;
 
   & span:not(.current) {
     @include opacity();
   }
   span:not(:first-child) {
-    margin-left: 1em;
+    margin-left: 20%;
     cursor: pointer;
   }
 }
@@ -56,5 +56,14 @@
   100% {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
   }
 }
