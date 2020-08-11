@@ -68,6 +68,9 @@
 
   .App .navbar-wrap{
     margin: 0;
-    padding: 1em;
+  }
+
+  .navbar-wrapper{
+    @include global-spacing-primary;
   }
 }
