@@ -38,14 +38,15 @@ const Navbar =(props) => {
   if (open) {
     return (
       <div className='nav-mobile'>
+        
         <div className="logo-close">
           <img src={logo} alt='logo' />
-        </div>
-        <Hamburger
+          <Hamburger
           aria-label='Close navigation'
           className='open-nav'
           onClick={changeOpen}
         />
+        </div>
         <NavLinks links={links} className='nav-list-mobile' />
       </div>
     );
