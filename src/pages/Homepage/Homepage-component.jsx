@@ -4,6 +4,7 @@ import PageSection from '../../components/PageSection/PageSection-component';
 import Button from '../../components/Button/Button-component';
 import Card from '../../components/Card/Card-component';
 import Testimonial from '../../components/Testimonial/Testimonial-container';
+import Carousel from '../../components/Carousel/Carousel-component';
 
 import './Homepage-styles.scss';
 import { ReactComponent as Logo } from '../../arrow.svg';
@@ -149,15 +150,27 @@ const Homepage = () => {
 
       <PageSection className='testimonials-section'>
         <div>
-          <Testimonial
-            title='What our customer are saying'
-            image='/assets/jpg/profile.jpg'
-            name='Edward Newgate'
-            info='Founder Circle'
-            review='Our dedicated patient engagement app and 
+          <Carousel
+            slides={[
+              <Testimonial
+                title='What our customer are saying'
+                image='/assets/jpg/profile.jpg'
+                name='Edward Newgate'
+                info='Founder Circle'
+                review='Our dedicated patient engagement app and 
         web portal allow you to access information instantaneously 
         (no tedeous form, long calls, or administrative hassle) 
         and securely'
+              />,
+              <Testimonial
+                title='Testimonial 2'
+                review='Our dedicated patient'
+              />,
+              <Testimonial
+                title='Testimonial 3'
+                review='Our dedicated patient'
+              />,
+            ]}
           />
         </div>
       </PageSection>

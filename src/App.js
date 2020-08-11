@@ -1,6 +1,10 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
 import './App.scss';
+
 import Homepage from './pages/Homepage/Homepage-component';
+import AppPage from './pages/App-page/App-page-component';
 import Navbar from './components/NavBar/Navbar-component';
 import Footer from './components/Footer/Footer-container';
 
@@ -45,7 +49,10 @@ class App extends React.Component {
           logo='/assets/logo.svg'
           links={navLinks}
         />
-        <Homepage />
+        <Switch>
+          <Route exact path='/app' component={AppPage} />
+          <Route path='/' component={Homepage} />
+        </Switch>
         <Footer
           logo='/assets/logo-light.svg'
           brief='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
