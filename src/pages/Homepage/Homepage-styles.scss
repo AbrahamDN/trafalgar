@@ -175,8 +175,38 @@ $spacing-top: 15%;
   }
 }
 
-@media only screen and (max-width: 900px){
-  .split-content-text{
-    margin-top: 2em;
+// Mobile
+@media only screen and (max-width: 600px) {
+  * {
+    &::after {
+      display: none;
+    }
+  }
+
+  .services-section,
+  .testimonials-section,
+  .split-section,
+  .articles-section {
+    @include global-spacing-secondary($mobile: true);
+  }
+
+  .split-content {
+    min-width: auto;
+    width: 100% !important;
+    grid-template-columns: 100% !important;
+    .split-content-image {
+      img {
+        min-width: 100% !important;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .card-container {
+    grid-template-columns: 100%;
+
+    &::before {
+      display: none;
+    }
   }
 }
