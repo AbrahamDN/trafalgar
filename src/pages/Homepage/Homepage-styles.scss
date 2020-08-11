@@ -174,3 +174,9 @@ $spacing-top: 15%;
     }
   }
 }
+
+@media only screen and (max-width: 900px){
+  .split-content-text{
+    margin-top: 2em;
+  }
+}
