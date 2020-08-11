@@ -21,7 +21,7 @@ $spacing-top: 15%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-    grid-gap: 2.5em 5em;
+    grid-gap: 5em;
   }
 
   .header-section {
@@ -148,7 +148,7 @@ $spacing-top: 15%;
   }
 }
 
-//  Reused classes
+//
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
@@ -156,6 +156,7 @@ $spacing-top: 15%;
   position: relative;
 }
 
+//
 .split-content {
   @include image-sizing();
   min-width: 347px;
@@ -174,43 +175,8 @@ $spacing-top: 15%;
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 900px){
   .split-content-text{
     margin-top: 2em;
-=======
-// Mobile
-@media only screen and (max-width: 600px) {
-  * {
-    &::after {
-      display: none;
-    }
-  }
-
-  .services-section,
-  .testimonials-section,
-  .split-section,
-  .articles-section {
-    @include global-spacing-secondary($mobile: true);
-  }
-
-  .split-content {
-    min-width: auto;
-    width: 100% !important;
-    grid-template-columns: 100% !important;
-    .split-content-image {
-      img {
-        min-width: 100% !important;
-      }
-    }
-  }
-
-  .card-container {
-    grid-template-columns: 100%;
-
-    &::before {
-      display: none;
-    }
->>>>>>> 7240f482afa1d466d51fbe8ffeae2b6fc4648669
   }
 }
