@@ -21,7 +21,7 @@ $spacing-top: 15%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-    grid-gap: 2.5em 5em;
+    grid-gap: 5em;
   }
 
   .header-section {
@@ -148,7 +148,7 @@ $spacing-top: 15%;
   }
 }
 
-//  Reused classes
+//
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33ch, 1fr));
@@ -156,6 +156,7 @@ $spacing-top: 15%;
   position: relative;
 }
 
+//
 .split-content {
   @include image-sizing();
   min-width: 347px;
@@ -196,6 +197,7 @@ $spacing-top: 15%;
     .split-content-image {
       img {
         min-width: 100% !important;
+        object-fit: cover;
       }
     }
   }
@@ -206,5 +208,11 @@ $spacing-top: 15%;
     &::before {
       display: none;
     }
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .split-content-text{
+    margin-top: 3em;
   }
 }
