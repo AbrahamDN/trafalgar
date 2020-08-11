@@ -3,15 +3,15 @@ import './Navbar-styles.scss';
 import NavLinks from '../NavLinks/NavLinks-component';
 import Hamburger from '../Hamburger/Hamburger-component';
 
-function Navbar(props){
+const Navbar =(props) => {
   const [width, setWidth] = useState(window.innerWidth)
   let [open, setOpen] = useState(false)
 
- function updateWindowDimensions(){
+ const updateWindowDimensions = () => {
    setWidth(window.innerWidth)
  }
 
- function changeOpen(){
+ const changeOpen= () => {
    setOpen(!open);
   };
 
