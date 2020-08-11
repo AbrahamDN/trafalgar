@@ -21,7 +21,7 @@ $spacing-top: 15%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-    grid-gap: 5em;
+    grid-gap: 2.5em 5em;
   }
 
   .header-section {
@@ -211,8 +211,8 @@ $spacing-top: 15%;
   }
 }
 
-@media only screen and (max-width: 900px){
-  .split-content-text{
+@media only screen and (max-width: 900px) {
+  .split-content-text {
     margin-top: 3em;
   }
 }
