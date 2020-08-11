@@ -54,3 +54,20 @@
     }
   }
 }
+
+@media(max-width: 900px){
+  .navbar-wrap{
+    position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:99;
+
+  background:white;
+  }
+
+  .App .navbar-wrap{
+    margin: 0;
+    padding: 1em;
+  }
+}
