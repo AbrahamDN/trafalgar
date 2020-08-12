@@ -9,12 +9,12 @@ const AppPage = () => {
       <PageSection className='featured-section'>
         <div className='featured-header'>
           <h1>Featured app title here</h1>
-          <p>Description of featured app itemhere</p>
+          <p>Description of featured app item here</p>
         </div>
 
         <Card
           className='featured-card-app'
-          icon='/trafalgar/assets/svg/online-pharmacy-icon.svg'
+          icon='/assets/svg/online-pharmacy-icon.svg'
           title='Online pharmacy'
           text='Buy  your medicines with our mobile application with a simple delivery system'
         />
@@ -38,38 +38,38 @@ const AppPage = () => {
         <div className='card-container'>
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/search-icon.svg'
+            icon='/assets/svg/search-icon.svg'
             title='Search doctor'
             text='Choose your doctor from thousands of specialist, general, and trusted hospitals'
           />
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/online-pharmacy-icon.svg'
+            icon='/assets/svg/online-pharmacy-icon.svg'
             title='Online pharmacy'
             text='Buy  your medicines with our mobile application with a simple delivery system'
           />
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/consultation-icon.svg'
+            icon='/assets/svg/consultation-icon.svg'
             title='Consultation'
             text='Free consultation with our trusted doctors and get the best recomendations'
           />
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/details-info-icon.svg'
+            icon='/assets/svg/details-info-icon.svg'
             title='Details info'
             text='Free consultation with our trusted doctors and get the best recomendations'
           />
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/emergency-care-icon.svg'
+            icon='/assets/svg/emergency-care-icon.svg'
             title='Emergency care'
             text='You can get 24/7 urgent care for yourself or your children and your
                     lovely family'
           />
           <Card
             className='card-app'
-            icon='/trafalgar/assets/svg/tracking-icon.svg'
+            icon='/assets/svg/tracking-icon.svg'
             title='Tracking'
             text='Track and save your medical history and health data'
           />
