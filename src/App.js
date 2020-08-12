@@ -26,7 +26,7 @@ class App extends React.Component {
         },
         {
           name: 'Apps',
-          url: '/',
+          url: '/app',
         },
         {
           name: 'Testimonials',
