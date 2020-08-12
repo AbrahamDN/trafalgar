@@ -7,7 +7,9 @@ import Testimonial from '../../components/Testimonial/Testimonial-container';
 import Carousel from '../../components/Carousel/Carousel-component';
 
 import './Homepage-styles.scss';
+
 import { ReactComponent as Logo } from '../../arrow.svg';
+import TESTIMONIALS from './testimonials';
 
 const Homepage = () => {
   const articles = [
@@ -33,6 +35,16 @@ const Homepage = () => {
       link: '/',
     },
   ];
+
+  const handleTestimonials = data => {
+    const testimonials = [];
+
+    data.map(testimonial =>
+      testimonials.push(<Testimonial {...testimonial} />)
+    );
+
+    return testimonials;
+  };
 
   return (
     <div className='homepage'>
@@ -150,28 +162,7 @@ const Homepage = () => {
 
       <PageSection className='testimonials-section'>
         <div>
-          <Carousel
-            slides={[
-              <Testimonial
-                title='What our customer are saying'
-                image='/assets/jpg/profile.jpg'
-                name='Edward Newgate'
-                info='Founder Circle'
-                review='Our dedicated patient engagement app and 
-        web portal allow you to access information instantaneously 
-        (no tedeous form, long calls, or administrative hassle) 
-        and securely'
-              />,
-              <Testimonial
-                title='Testimonial 2'
-                review='Our dedicated patient'
-              />,
-              <Testimonial
-                title='Testimonial 3'
-                review='Our dedicated patient'
-              />,
-            ]}
-          />
+          <Carousel slides={handleTestimonials(TESTIMONIALS)} />
         </div>
       </PageSection>
 
