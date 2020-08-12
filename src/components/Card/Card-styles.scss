@@ -10,7 +10,7 @@ $em: 2em;
 
 .card {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr;
   min-width: 200px;
   min-height: 150px;
   box-shadow: $drop-shadow;
